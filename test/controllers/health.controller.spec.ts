@@ -24,8 +24,7 @@ describe('health.controller', () => {
 
     test('should return {status: "UP:}', () => {
       return request(app).get('/health').expect({
-        status: 'UP',
-        description: 'Server is UP and running.'
+        status: 'UP & Running'
       });
     });
   });

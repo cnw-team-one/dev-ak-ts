@@ -6,8 +6,7 @@ export class HealthController {
   @GET
   async healthCheck(): Promise<{status: string;}> {
     return {
-      status: 'UP',
-      description: 'Server is UP and running.'
+      status: 'UP & Running'
     };
   }
 }
