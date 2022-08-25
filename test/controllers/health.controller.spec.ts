@@ -23,9 +23,7 @@ describe('health.controller', () => {
     });
 
     test('should return {status: "UP:}', () => {
-      return request(app).get('/health').expect({
-        status: 'UP Running'
-      });
+      return request(app).get('/health').expect({status: 'UP'});
     });
   });
 
